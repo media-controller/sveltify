@@ -1,19 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="076c1550-35d8-4a29-83eb-86280b9391f1" name="Default Changelist" comment="init IDEA">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/svelte-snowpack.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="076c1550-35d8-4a29-83eb-86280b9391f1" name="Default Changelist" comment="add spotify-web-api">
+      <change afterPath="$PROJECT_DIR$/src/spotify/Search.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spotify/SpotifyPagingObject.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spotify/rxSpotifyWebPlayBackSDK.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/filters.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spotify/ConnectedPlayer.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spotify/LerpedSeekbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/spotify/LerpedSeekbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spotify/Player.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/spotify/Player.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spotify/WebPlaybackSDK.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spotify/WebPlaybackStore.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spotify/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/spotify/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/lifecycles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/lifecycles.ts" afterDir="false" />
     </list>
+    <list id="b4e0a9a8-3a72-4c16-b03d-551cf98c3b3f" name="git" comment="" />
+    <list id="70ad0bbe-8c8e-4f0e-a563-ab0b98f6170c" name="spotify api" comment="" />
+    <list id="d90e2005-bd28-465b-86d8-e3b793ecc3e2" name="spotify components" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Account" />
+        <option value="Me" />
+        <option value="UserDevice" />
+        <option value="TrackObject" />
+        <option value="Player" />
+        <option value="TypeScript File" />
+        <option value="Seekbar" />
+        <option value="SpotifyPagingObject" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="V" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1m7kObSG1g4zHV3gZXMziPoM3Au" />
   <component name="ProjectViewState">
@@ -24,11 +64,35 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/spotify" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/spotify" />
+      <recent name="$PROJECT_DIR$/src/spotify/components/playback" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/spotify" />
+      <recent name="$PROJECT_DIR$/src/spotify/components/playback" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -42,6 +106,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -49,12 +114,58 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="076c1550-35d8-4a29-83eb-86280b9391f1" name="Default Changelist" comment="" />
+      <changelist id="b4e0a9a8-3a72-4c16-b03d-551cf98c3b3f" name="git" comment="" />
+      <changelist id="70ad0bbe-8c8e-4f0e-a563-ab0b98f6170c" name="spotify api" comment="" />
+      <changelist id="d90e2005-bd28-465b-86d8-e3b793ecc3e2" name="spotify components" comment="" />
       <created>1608851985235</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608851985235</updated>
       <workItem from="1608851986406" duration="238000" />
+      <workItem from="1608852247585" duration="65135000" />
+      <workItem from="1609220182690" duration="10568000" />
+      <workItem from="1609387959734" duration="837000" />
+      <workItem from="1609637915063" duration="28915000" />
+      <workItem from="1610325699551" duration="1340000" />
+      <workItem from="1611437562496" duration="519000" />
+      <workItem from="1612399340551" duration="20849000" />
     </task>
+    <task id="LOCAL-00001" summary="init IDEA">
+      <created>1608852309674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608852309675</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add spotify-web-api-js">
+      <created>1608852512725</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608852512725</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add spotify-web-api">
+      <created>1611437911057</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611437911057</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add spotify-web-api">
+      <created>1611437925084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611437925084</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add spotify-web-api">
+      <created>1611437928875</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611437928875</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,9 +181,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init IDEA" />
-    <option name="LAST_COMMIT_MESSAGE" value="init IDEA" />
+    <MESSAGE value="add spotify-web-api-js" />
+    <MESSAGE value="add spotify-web-api" />
+    <option name="LAST_COMMIT_MESSAGE" value="add spotify-web-api" />
   </component>
 </project>
