@@ -1,30 +1,37 @@
 <script lang='typescript'>
     import Player from "./spotify/Player.svelte";
+    import {player$, playbackState$,} from "./spotify/rxSpotifyWebPlayBackSDK";
+    import Me from "./spotify/Me.svelte";
+    import Search from "./spotify/Search.svelte";
     import {
-        accountErrors$,
-        authenticationErrors$,
-        initializationErrors$,
-        playbackErrors$,
-        player$
-    } from "./spotify/WebPlaybackStore";
+        paused$,
+        duration$,
+        position$,
+        currentTrack$,
+        currentTrackImages$,
+        lerpedPosition$,
+    } from "./spotify/rxSpotifyWebPlayBackSDK";
 
-    $: player = $player$
-    $: console.error("Acount         :", $accountErrors$)
-    $: console.error("Authentication :", $authenticationErrors$)
-    $: console.error("Initialization :", $initializationErrors$)
-    $: console.error("Playback       :", $playbackErrors$)
+    $: connectedPlayer = $player$
+    $: playbackState = $playbackState$
+
 </script>
 
-{#if player}
-    {#await player.connect()}
-        Connecting to player...
-    {:then connected}
-        {#if connected}
-            <Player {player}/>
-        {:else}
-            failed to connect
-        {/if}
-    {/await}
+<Search/>
+
+
+paused$ = {$paused$} <br>
+duration$ = {$duration$} <br>
+position$ = {$position$} <br>
+currentTrack$ = {$currentTrack$} <br>
+currentTrackImages$ = {$currentTrackImages$} <br>
+lerpedPosition$ = {$lerpedPosition$} <br>
+
+<Me/>
+
+{#if playbackState }
+    Player: <br>
+<!--    <Player {connectedPlayer} {playbackState}/>-->
 {:else}
-    Web Playback SDK Loading...
+    Connecting to Spotify
 {/if}

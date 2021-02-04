@@ -1,6 +1,6 @@
-import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte'
-import { Subject, defer } from 'rxjs'
-import { take, takeUntil } from 'rxjs/operators'
+import {afterUpdate, beforeUpdate, onDestroy, onMount} from 'svelte'
+import {defer, Subject} from 'rxjs'
+import {take, takeUntil} from 'rxjs/operators'
 
 export const onMount$ = defer(() => {
     const subject = new Subject<void>()
@@ -33,3 +33,4 @@ export const afterUpdate$ = defer(() => {
     })
     return subject.asObservable().pipe(takeUntil(onDestroy$))
 })
+

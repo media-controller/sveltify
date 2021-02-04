@@ -3,9 +3,9 @@ import {token} from './token';
 export {token} from './token';
 
 function setupApi(accessToken: string = token): SpotifyWebApi.SpotifyWebApiJs {
-    const api = new SpotifyWebApi();
-    api.setAccessToken(accessToken)
-    return api
+    const spotifyWebApi = new SpotifyWebApi();
+    spotifyWebApi.setAccessToken(accessToken)
+    return spotifyWebApi
 }
 
 export const api: SpotifyWebApi.SpotifyWebApiJs = setupApi();
